@@ -39,7 +39,12 @@ body {
   font-family: 'Overpass';
 }
 
-.description {
+.rating-heading {
+  margin-top: 35px;
+  color: white;
+}
+
+.rating-description {
   color: hsl(217, 12%, 63%);
 }
 
@@ -94,7 +99,7 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: 'Overpass';
-  height: 280px;
+  height: 330px;
   width: 350px;
   padding: 40px 35px 20px 35px;
   background-color: hsl(213, 19%, 18%);
@@ -105,6 +110,20 @@ body {
   width: 140px;
   height: auto;
   align-self: center;
+}
+
+.rating-result {
+  align-self: center;
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 10px;
+  margin: 15px;
+  width: 60%;
+}
+
+.rating-result-text {
+  color: orange;
+  margin: 5px;
+  padding-top: 1px;
 }
 
 .thank-you-heading {
