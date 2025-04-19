@@ -64,6 +64,11 @@ body {
     align-items: center;
 }
 
+.rating-bubble:hover {
+    background-color: white;
+    color: hsl(213, 19%, 18%);
+}
+
 .rating-bubble-text {
     margin-top: 1px;
 }
@@ -78,6 +83,11 @@ body {
     border: none;
     height: 40px;
     font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Thank you container */
