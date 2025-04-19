@@ -77,11 +77,11 @@ body {
 
 .submit-button {
   letter-spacing: 0.1rem;
-  font-size: 16px;
+  font-size: 13px;
   font-family: 'Overpass';
-  background-color: orange;
+  background-color: hsl(25, 97%, 53%);
   color: black;
-  border-radius: 15px;
+  border-radius: 25px;
   border: none;
   height: 40px;
   font-weight: bold;
@@ -121,7 +121,7 @@ body {
 }
 
 .rating-result-text {
-  color: orange;
+  color: hsl(25, 97%, 53%);
   margin: 5px;
   padding-top: 1px;
 }
