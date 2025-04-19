@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Rating container styling */
 
 .rating-container {
@@ -69,6 +73,12 @@ body {
 .rating-bubble:hover {
   background-color: white;
   color: hsl(213, 19%, 18%);
+  cursor: pointer;
+}
+
+.rating-bubble.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
 }
 
 .rating-bubble-text {
@@ -90,6 +100,7 @@ body {
 .submit-button:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 /* Thank you container */
