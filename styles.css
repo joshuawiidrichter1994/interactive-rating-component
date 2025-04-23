@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --color-bg-body: hsl(216, 12%, 8%);
+  --color-bg-rating-container: hsl(213, 19%, 18%);
+  --color-bg-star-container: hsl(213, 19%, 25%);
+  --color-text-default: white;
+  --color-text-description: hsl(217, 12%, 63%);
+  --color-bubble-hover-bg: white;
+  --color-bubble-hover-text: hsl(213, 19%, 18%);
+  --color-selected: hsl(25, 97%, 53%);
+  --color-submit-bg: hsl(25, 97%, 53%);
+  --color-submit-hover-bg: white;
+  --color-submit-hover-text: black;
+  --color-submit-text: black;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(216, 12%, 8%);
-
+  background-color: var(--color-bg-body);
   margin-top: 100px;
 }
 
@@ -21,12 +35,12 @@ body {
   height: 350px;
   width: 350px;
   padding: 40px 35px 20px 35px;
-  background-color: hsl(213, 19%, 18%);
+  background-color: var(--color-bg-rating-container);
   border-radius: 10px;
 }
 
 .star-container {
-  background-color: hsl(213, 19%, 25%);
+  background-color: var(--color-bg-star-container);
   border-radius: 50%;
   height: 45px;
   width: 45px;
@@ -40,17 +54,17 @@ body {
 }
 
 .text-container {
-  color: white;
+  color: var(--color-text-default);
   font-family: 'Overpass';
 }
 
 .rating-heading {
   margin-top: 35px;
-  color: white;
+  color: var(--color-text-default);
 }
 
 .rating-description {
-  color: hsl(217, 12%, 63%);
+  color: var(--color-text-description);
 }
 
 .ratings-container {
@@ -60,8 +74,8 @@ body {
 }
 
 .rating-bubble {
-  background-color: hsl(213, 19%, 25%);
-  color: white;
+  background-color: var(--color-bg-star-container);
+  color: var(--color-text-default);
   font-family: 'Overpass';
   border-radius: 50%;
   height: 45px;
@@ -72,14 +86,14 @@ body {
 }
 
 .rating-bubble:hover {
-  background-color: white;
-  color: hsl(213, 19%, 18%);
+  background-color: var(--color-bubble-hover-bg);
+  color: var(--color-bubble-hover-text);
   cursor: pointer;
 }
 
 .rating-bubble.selected {
-  background-color: hsl(25, 97%, 53%);
-  color: white;
+  background-color: var(--color-selected);
+  color: var(--color-text-default);
 }
 
 .rating-bubble-text {
@@ -90,8 +104,8 @@ body {
   letter-spacing: 0.1rem;
   font-size: 13px;
   font-family: 'Overpass';
-  background-color: hsl(25, 97%, 53%);
-  color: black;
+  background-color: var(--color-submit-bg);
+  color: var(--color-submit-text);
   border-radius: 25px;
   border: none;
   height: 40px;
@@ -99,8 +113,8 @@ body {
 }
 
 .submit-button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--color-submit-hover-bg);
+  color: var(--color-submit-hover-text);
   cursor: pointer;
 }
 
@@ -114,7 +128,7 @@ body {
   height: 330px;
   width: 350px;
   padding: 40px 35px 20px 35px;
-  background-color: hsl(213, 19%, 18%);
+  background-color: var(--color-bg-rating-container);
   border-radius: 10px;
 }
 
@@ -126,29 +140,29 @@ body {
 
 .rating-result {
   align-self: center;
-  background-color: hsl(213, 19%, 25%);
+  background-color: var(--color-bg-star-container);
   border-radius: 10px;
   margin: 15px;
   width: 60%;
 }
 
 .rating-result-text {
-  color: hsl(25, 97%, 53%);
+  color: var(--color-selected);
   margin: 5px;
   padding-top: 1px;
 }
 
 .thank-you-heading {
-  color: white;
+  color: var(--color-text-default);
 }
 
 .thank-you-text {
-  color: hsl(217, 12%, 63%);
+  color: var(--color-text-description);
 }
+
 /* MEDIA QUERIES */
 
 @media (max-width: 375px) {
-  /* Rating container media queries */
   .rating-container {
     width: 250px;
     height: 300px;
@@ -176,7 +190,6 @@ body {
     margin-left: 2px;
   }
 
-  /* Thank you container media queries */
   .thank-you-container {
     width: 250px;
     height: 350px;
