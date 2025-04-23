@@ -5,7 +5,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(216, 12%, 8%);
-  width: 100%;
+
+  margin-top: 100px;
 }
 
 .hidden {
@@ -143,4 +144,41 @@ body {
 
 .thank-you-text {
   color: hsl(217, 12%, 63%);
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 375px) {
+  /* Rating container media queries */
+  .rating-container {
+    width: 250px;
+    height: 300px;
+    padding: 20px 35px 20px 35px;
+  }
+
+  .rating-heading {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .rating-bubble {
+    height: 35px;
+    width: 35px;
+  }
+
+  .star-container {
+    width: 35px;
+    height: 35px;
+  }
+
+  .star-img {
+    height: 15px;
+    width: auto;
+    margin-left: 2px;
+  }
+
+  /* Thank you container media queries */
+  .thank-you-container {
+    width: 250px;
+    height: 350px;
+  }
 }
