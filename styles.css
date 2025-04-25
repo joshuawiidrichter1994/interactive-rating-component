@@ -112,12 +112,6 @@ body {
   font-weight: bold;
 }
 
-.submit-button:hover {
-  background-color: var(--color-submit-hover-bg);
-  color: var(--color-submit-hover-text);
-  cursor: pointer;
-}
-
 /* Thank you container */
 
 .thank-you-container {
@@ -193,5 +187,13 @@ body {
   .thank-you-container {
     width: 250px;
     height: 350px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .submit-button:hover {
+    background-color: var(--color-submit-hover-bg);
+    color: var(--color-submit-hover-text);
+    cursor: pointer;
   }
 }
